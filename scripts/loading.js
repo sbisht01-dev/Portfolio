@@ -1,3 +1,20 @@
+{
+  function width() {
+    let left = document.getElementById("inner_container");
+    let leftWidth = left.offsetWidth;
+    console.log("left width", leftWidth);
+
+    let right = document.getElementsByClassName("bento");
+    let rightWidth = right[0].offsetWidth;
+    console.log("right width", rightWidth);
+  }
+  width();
+
+  setTimeout(() => {
+    width();
+  }, 5000);
+}
+
 const paper = document.querySelector("#paper"),
   pen = paper.getContext("2d");
 console.log("Load");
