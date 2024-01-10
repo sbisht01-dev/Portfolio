@@ -22,14 +22,14 @@ const draw = () => {
 
   const center = {
     x: paper.width * 0.5,
-    y: paper.height * 0.5,
+    y: paper.height * 0.2,
   };
 
   const arcradius = 5,
     velocity = 10;
   (distance = Math.PI + elapsedTime * velocity), (length = 20);
   const x = center.x + length * Math.cos(distance),
-    y = center.x + length * Math.sin(distance);
+    y = center.y + length * Math.sin(distance);
 
   // pen.strokeStyle = "black";
   // pen.lineWidth = 5;
@@ -41,6 +41,8 @@ const draw = () => {
   pen.fillStyle = "black";
   pen.beginPath();
   pen.arc(x, y, arcradius, 0, 2 * Math.PI);
+  // pen.moveTo(start.x, start.y);
+
   pen.stroke();
   pen.fill();
   requestAnimationFrame(draw);

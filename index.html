@@ -4,22 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="stylesheets/index.css" />
+    <link rel="stylesheet" href="stylesheets/bento.css" />
   </head>
   <body>
     <div id="container">
       <div id="inner_container">
-        <div class="image">
-          <img
-            src="assests/IMG_20220302_194404_631.jpg"
-            alt="profile_picture"
-          />
+        <div class="detail">
+          <div class="image">
+            <img
+              src="assests/IMG_20220302_194404_631.jpg"
+              alt="profile_picture"
+            />
+          </div>
+          <div class="name">Saurabh Bisht</div>
         </div>
-        <div class="name">Saurabh Bisht</div>
+
+        <div class="navigation">
+          <div id="home">Home</div>
+          <div id="home">Portfolio</div>
+          <div id="home">Contact</div>
+          <div id="home">About</div>
+        </div>
         <div id="loading">
           <canvas id="paper"></canvas>
         </div>
       </div>
+
+      <div class="bento">grid section</div>
     </div>
   </body>
   <script src="scripts/loading.js"></script>

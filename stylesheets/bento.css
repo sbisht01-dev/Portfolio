@@ -1,0 +1,7 @@
+.bento {
+  width: 75vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  background-color: rebeccapurple;
+}
